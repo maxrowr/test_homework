@@ -2,7 +2,7 @@ def cat_in_hats(cats: int, circles: int) -> list:
     
     hat_state = [False for i in range(cats)]
     for i in range(1, circles+1):
-        for j in range(i, circles+1, i):
+        for j in range(i, cats+1, i):
             hat_state[j-1] = not hat_state[j-1]
 
     hat_cats = []
